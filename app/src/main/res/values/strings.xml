@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SplashActivity</string>
+    <string name="correo">Correo Electrónico: </string>
+    <string name="contrasena">Contraseña</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="registrese">Regístrese</string>
+    <string name="repcontrasena">Repetir Contraseña</string>
+    <string name="registrar">Registrar</string>
+    <string name="mPerfil">Mi perfil</string>
+    <string name="mCerrar">Cerrar sesión</string>
+    <string name="mPrincipal">Principal</string>
+
+    <string name="facebook_app_id">830192913820602</string>
+    <string name="fb_login_protocol_scheme">fb830192913820602</string>
+
+</resources>
