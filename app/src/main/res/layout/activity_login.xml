@@ -4,18 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.juan.splashactivity.LoginActivity">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:src="@drawable/splash1"/>
+    tools:context="com.juan.splashactivity.LoginActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="60sp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/arrive1" />
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
         android:layout_margin="10dp">
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -23,6 +35,7 @@
             android:hint="@string/correo"
             android:id="@+id/eCorreo"
             android:inputType="textEmailAddress"/>
+            //android:drawableLeft="@drawable/ic_menu_logout"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -30,6 +43,7 @@
             android:hint="@string/contrasena"
             android:id="@+id/eContrasena"
             android:inputType="textPassword"/>
+            //android:drawableLeft="@drawable/ic_login_password"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -42,22 +56,37 @@
                 android:background="@color/black"
                 android:onClick="iniciar"/>
         </LinearLayout>
-
-        <com.facebook.login.widget.LoginButton
-            android:id="@+id/login_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp" />
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="@string/registrese"
-            android:onClick="Registrese"
+            android:layout_height="wrap_content">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1sp"
+               />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="1sp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:textColor="@color/blue"/>
+            android:onClick="Registrese"
+            android:text="@string/registrese"
+            android:textColor="@color/blue"
+            android:layout_weight="0.35"
+            android:layout_marginTop="10sp"/>
 
 
     </LinearLayout>

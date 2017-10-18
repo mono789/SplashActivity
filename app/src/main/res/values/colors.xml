@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<color name="colorPrimary">#000000</color>
-    <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#808080</color>
+    <color name="colorPrimaryDark">#060606</color>
+    <color name="colorAccent">#060606</color>
 	<item name="black" type="color">#000000</item>   
 	<item name="navy" type="color">	#000080</item>   
 	<item name="darkblue" type="color">#00008b</item>
@@ -141,7 +141,7 @@
 	<item name="snow" type="color">#fffafa</item>
 	<item name="ivory" type="color">#fffff0</item>
 	<item name="white" type="color">#ffffff</item>
-    
+	<item name="fondo" type="color">#a8a8a8</item>
 	
 	<integer-array name="EditColors">
 	    

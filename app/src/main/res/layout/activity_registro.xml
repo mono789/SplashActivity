@@ -6,10 +6,12 @@
     android:orientation="vertical"
     tools:context="com.juan.splashactivity.RegistroActivity">
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:src="@drawable/splash1"/>
+        android:layout_width="299dp"
+        android:layout_height="118dp"
+        android:src="@drawable/arrive1"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.12"
+        android:layout_gravity="center_horizontal"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -23,6 +25,15 @@
             android:hint="@string/correo"
             android:id="@+id/eCorreo"
             android:inputType="textEmailAddress"/>
+            //android:drawableLeft="@drawable/ic_login_mail"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/Nombre"
+            android:id="@+id/eNombre"
+            android:inputType="textPersonName"/>
+            //android:drawableLeft="@drawable/ic_login_name"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -30,6 +41,7 @@
             android:hint="@string/contrasena"
             android:id="@+id/eContrasena"
             android:inputType="textPassword"/>
+            //android:drawableLeft="@drawable/ic_login_password"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -37,6 +49,7 @@
             android:hint="@string/repcontrasena"
             android:id="@+id/eRepContrasena"
             android:inputType="textPassword"/>
+            android:drawableLeft="@drawable/ic_login_password"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
